@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="F4Ydx5" name="ChorusEffect_VST" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginFormats="buildVST,buildVST3"
+              pluginCharacteristicsValue="pluginProducesMidiOut,pluginWantsMidiIn"
+              pluginChannelConfigs="{2,2}">
+  <MAINGROUP id="GnfX3u" name="ChorusEffect_VST">
+    <GROUP id="{A09A1FF6-4FE8-EE8C-8527-E20E2A61D9F9}" name="Source">
+      <GROUP id="{823CC9DC-DC54-7628-9872-A9334D03BAA3}" name="UI">
+        <GROUP id="{2CB54F4E-373D-B2EB-E367-94DBAC285DCD}" name="Assets">
+          <FILE id="QjeDM3" name="chorus_effect_logo.png" compile="0" resource="1"
+                file="Source/UI/Assets/chorus_effect_logo.png"/>
+          <FILE id="oIv4Zs" name="rotary_slider_cursor.png" compile="0" resource="1"
+                file="Source/UI/Assets/rotary_slider_cursor.png"/>
+          <FILE id="ANfqpb" name="slider_cursor.png" compile="0" resource="1"
+                file="Source/UI/Assets/slider_cursor.png"/>
+        </GROUP>
+        <FILE id="KLxDx3" name="CustomLookAndFeel.h" compile="0" resource="0"
+              file="Source/UI/CustomLookAndFeel.h"/>
+      </GROUP>
+      <FILE id="LfgRPo" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Ts6NsK" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="Rz32mu" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="NHiXPx" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="ChorusEffect_VST"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="ChorusEffect_VST"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../Application/juce-8.0.6-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

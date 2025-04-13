@@ -1,6 +1,6 @@
 # Chorus Effect - VST made with JUCE
 
-The follow repository contains the source code and the executable of a simple chorus effect VST plugin made with JUCE.
+The following repository contains the source code and the executable of a simple chorus effect VST plugin made with JUCE.
 
 ## Context
 

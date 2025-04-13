@@ -126,7 +126,7 @@ public:
 		float image_height = (float)cursorImage.getHeight();
 		float rate = image_height / image_width;
 
-		int cursor_width = trackWidth * 6;
+		int cursor_width = trackWidth * 7;
 		int cursor_height = cursor_width * rate;
 
 		g.drawImage(cursorImage, x + width / 2 - cursor_width / 2, sliderPos - cursor_height / 2, cursor_width, cursor_height, 0, 0, cursorImage.getWidth(), cursorImage.getHeight());
@@ -177,7 +177,7 @@ public:
 			g.strokePath(valueArc, PathStrokeType(lineW, PathStrokeType::curved, PathStrokeType::rounded));
 		}
 
-		auto thumbWidth = lineW * 2.0f;
+		auto thumbWidth = lineW * 3.0f;
 		Point<float> thumbPoint(bounds.getCentreX() + arcRadius * std::cos(toAngle - MathConstants<float>::halfPi),
 			bounds.getCentreY() + arcRadius * std::sin(toAngle - MathConstants<float>::halfPi));
 
